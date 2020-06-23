@@ -4,7 +4,9 @@
   "description": "In this exercise you will be using a test driven development (TDD) approach to implement a `strictEqual()` function. \r The `strictEqual()` function will work similiar to the way the `===` operator works but within a `strictEqual()` function.",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "mocha -w"
+    "test": "mocha -w",
+    "lint": "./node_modules/.bin/eslint --format codeframe .",
+    "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe ."
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,8 @@
   },
   "homepage": "https://github.com/crkingsley/week-03-tdd-strict-equal#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.3.1",
     "mocha": "^8.0.1"
   }
 }
